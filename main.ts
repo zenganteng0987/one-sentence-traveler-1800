@@ -9,29 +9,32 @@
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
-// One image carries the whole sentence: a road joining town to town the
-// world over, so that letters, books, and spoken words travel it in a
-// moment — and the traveler never has to leave their chair.
+// One image carries the whole sentence: a road from your own chair to a
+// town across the world, carrying your letter there and a book from its
+// library back — before the ink on the letter is dry.
 //
 // Judged against the kit's brief, most important criterion first:
-// 1. It explains the internet: it names the thing ("The internet is ...")
-//    and says what it does (a letter, a book, or a spoken word reaches any
-//    door in a moment), so a traveler from 1800 grasps what it is.
-// 2. It builds only from what 1800 already knows — a road, a town, a
-//    letter, a book, a spoken word, a chair, a door. Every word but the
-//    subject itself ("internet") was in use before 1800.
-// 3. It stays true: "town to town the world over" keeps the global sweep
-//    without the old draft's literal overclaim ("every town on earth" —
-//    many towns have no internet yet, and a literal reader could hold
-//    that against it). "Can reach" softens the rest, as a road can carry
-//    a letter to any door it joins.
-// 4. Every word earns its place: "from your own chair" is the one detail
-//    that shows the traveler need not travel at all; nothing is a list
-//    of features.
-// 5. One image sticks: a road joining town to town the world over,
-//    reached from your own chair.
+// 1. It explains the internet better than the old draft: it names the
+//    thing ("The internet is ...") and shows what it does BOTH ways —
+//    your words travel out, and the world's books travel back to you.
+//    The old draft only sent things out, and as a three-item list.
+// 2. It builds only from what 1800 already knows — a road, a chair, a
+//    town, a letter, a book, a library, ink. Every word but the subject
+//    itself ("internet") was in use before 1800.
+// 3. It stays true: "a town across the world" names one far town, not
+//    every town or every door — the old draft's "any door" promised a
+//    delivery the internet cannot make to doors it does not reach.
+//    "Before the ink is dry" is the speed of the road, not a promise
+//    about any one letter.
+// 4. Every word earns its place: the three-item list ("a letter, a book,
+//    or a spoken word") is gone — the brief bans a crammed list of
+//    features, and one letter out plus one book back says the same work
+//    in fewer words. "From your own chair" is the one detail that shows
+//    the traveler need not travel at all.
+// 5. One image sticks: a letter out and a book back, before the ink is
+//    dry — a phrase a reader can still picture a week later.
 const ENTRY =
-  "The internet is a road joining town to town the world over, so from your own chair a letter, a book, or a spoken word can reach any door in a moment.";
+  "The internet is a road from your own chair to a town across the world, carrying your letter there and a book from its library back before the ink is dry.";
 
 const outDir = process.env.MAKEFUN_OUTPUT_DIR ?? "/output";
 
